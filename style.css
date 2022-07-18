@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(var(--b3f,250,250,250),1);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+}
+
+.instagram-phone img{
+    height: 50rem;
+}
+
+.instagram-login{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group-login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid lightgray;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.instagram-logo{
+    height: 3.5rem;
+    margin-bottom: 15px;
+}
+
+.instagram-formulario{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;     
+}
+
+#txt-login{
+    width: 80%;
+    height: 35px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid lightgray;
+    background-color: rgba(var(--b3f,250,250,250),1);
+}
+
+#txt-password{
+    width: 80%;
+    height: 35px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid lightgray;
+    background-color: rgba(var(--b3f,250,250,250),1);
+}
+
+#btn-entrar{
+    margin-bottom: 10px;
+    width: 80%;
+    background-color: rgba(var(--d69,0,149,246),.3);
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.group-login-linha-divisoria{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 80%;
+    margin-top: 15px;
+}
+
+.linha-divisoria-1 hr{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    border-color: rgb(243, 243, 243);
+}
+
+.entre-div-ou{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.linha-divisoria-2 hr{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    border-color: rgb(243, 243, 243);
+}
+
+.group-login-facebook{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #385185;
+    margin-top: 25px;
+}
+
+
+
+.group-login-esqueceu-senha a{
+    display: flex;
+    font-size: 11px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #385185;
+    margin-top: 25px;
+}
+
+.nao-tem-conta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid lightgray;
+    width: 100%;
+    padding: 2rem 0;
+    margin-top: 10px;
+}
+
+.nao-tem-conta a{    
+    color: #385185;
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 2.8rem;
+    width: 9.8rem;
+    background-size: contain;
+}
+
+.app-download a{
+    text-decoration: none;
+}
+
+.app-download:nth-child(1){
+    background-image: url("./img/apple-button-ok.png");
+}
+
+.app-download:nth-child(2){
+    background-image: url("./img/googleplay-button-ok.png");
+}
+
+@media (max-width: 1900px){
+    .instagram-container{
+        width: 90%;
+    }
+
+    .group-login-linha-divisoria{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 80%;
+        margin-top: 15px;
+    }
+    
+    .linha-divisoria-1 hr{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 180px;
+        border-color: rgb(243, 243, 243);
+    }
+    
+    .entre-div-ou{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .linha-divisoria-2 hr{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 180px;
+        border-color: rgb(243, 243, 243);
+    }
+}
+
+
+@media (max-width: 1024px){
+    .instagram-container{
+        width: 90%;
+    }
+
+    .group-login-linha-divisoria{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 80%;
+        margin-top: 15px;
+    }
+    
+    .linha-divisoria-1 hr{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100px;
+        border-color: rgb(243, 243, 243);
+    }
+    
+    .entre-div-ou{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .linha-divisoria-2 hr{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100px;
+        border-color: rgb(243, 243, 243);
+    }
+}
+
+@media (max-width: 650px){
+
+    body{
+        background-color: #ffffff;
+    }
+
+    .instagram-container{
+        width: 90%;
+    }
+
+    .instagram-phone{
+        display: none;
+    }
+
+    .instagram-login{
+        width: 100%;
+    }
+
+    .group-login{
+        border: 1px solid transparent;
+    }
+
+    .group-login-linha-divisoria{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 80%;
+        margin-top: 15px;
+    }
+
+    .linha-divisoria-1 hr{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100px;
+        border-color: rgb(243, 243, 243);
+    }
+
+    .linha-divisoria-2 hr{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100px;
+        border-color: rgb(243, 243, 243);
+    }
+}
